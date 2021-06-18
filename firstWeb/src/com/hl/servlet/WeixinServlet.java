@@ -69,7 +69,7 @@ public class WeixinServlet extends javax.servlet.http.HttpServlet {
             textMessage.setToUserName(fromUserName);
             textMessage.setFromUserName(toUserName);
             textMessage.setCreateTime(System.currentTimeMillis());
-            textMessage.setContent("abcdefg");
+            textMessage.setContent("wo接收到你的信息了");
             responseMessage = WechatMessageUtil.textMessageToXml(textMessage);
         }
         log.info(responseMessage);
